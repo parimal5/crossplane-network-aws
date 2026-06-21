@@ -1,0 +1,16 @@
+apiVersion: ec2.aws.upbound.io/v1beta1
+kind: RouteTableAssociation
+metadata:
+  name: public-subnet-a-association
+spec:
+  forProvider:
+    region: us-east-1
+
+    routeTableIdRef:
+      name: public-rt
+
+    subnetIdRef:
+      name: public-subnet-a
+
+  providerConfigRef:
+    name: default
