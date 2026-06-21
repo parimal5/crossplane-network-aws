@@ -1,0 +1,13 @@
+apiVersion: ec2.aws.upbound.io/v1beta1
+kind: RouteTable
+metadata:
+  name: public-rt
+spec:
+  forProvider:
+    region: us-east-1
+
+    vpcIdRef:
+      name: demo-vpc
+
+  providerConfigRef:
+    name: default
