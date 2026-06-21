@@ -1,0 +1,16 @@
+apiVersion: ec2.aws.upbound.io/v1beta1
+kind: Subnet
+metadata:
+  name: public-subnet-a
+spec:
+  forProvider:
+    region: us-east-1
+    cidrBlock: 10.0.1.0/24
+
+    vpcIdRef:
+      name: demo-vpc
+
+    mapPublicIpOnLaunch: true
+
+  providerConfigRef:
+    name: default
