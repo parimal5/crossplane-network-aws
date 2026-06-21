@@ -4,3 +4,7 @@ metadata:
   name: upbound-provider-aws-ec2
 spec:
   package: xpkg.upbound.io/upbound/provider-aws-ec2:v2.6.1
+
+# Builds the core networking and compute surface: VPCs, subnets, routing, security groups and NACLs, load balancers and gateways, NAT and VPN endpoints, EC2 instances and launch templates, EBS volumes and snapshots, Elastic IPs, placement groups, and connectivity to Direct Connect and Transit Gateway.
+
+# http://marketplace.upbound.io/providers/upbound/provider-aws-ec2/v2.6.1?tab=readme
